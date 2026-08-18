@@ -8,7 +8,7 @@ import (
 	"context"
 	"testing"
 
-	pb "github.com/sovereignite/api/v1"
+	pb "github.com/sovereignite/signal/v1"
 )
 
 func TestValidateKey_FailClosed(t *testing.T) {

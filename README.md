@@ -2,12 +2,12 @@
 
 KeyValidation gRPC service extracted from the Sovereignite monorepo. It
 implements the `KeyValidation` service from the Sovereignite API
-(`github.com/sovereignite/api/v1`): `ValidateKey` and `IssueJWT`. The service
+(`github.com/sovereignite/signal/v1`): `ValidateKey` and `IssueJWT`. The service
 currently runs fail-closed while design decision D-007 remains unresolved —
 `ValidateKey` returns `Valid: false` for every request and `IssueJWT` refuses
 all token issuance.
 
-The package lives at the module root (`github.com/sovereignite/keyvalidation`)
+The package lives at the module root (`github.com/sovereignite/harbormaster`)
 so other modules can import it; the `cmd/keyvalidation` binary serves it over
 gRPC.
 

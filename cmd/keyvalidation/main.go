@@ -14,8 +14,8 @@ import (
 
 	"google.golang.org/grpc"
 
-	pb "github.com/sovereignite/api/v1"
-	"github.com/sovereignite/keyvalidation"
+	pb "github.com/sovereignite/signal/v1"
+	"github.com/sovereignite/harbormaster"
 )
 
 func main() {

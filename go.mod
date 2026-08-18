@@ -1,9 +1,9 @@
-module github.com/sovereignite/keyvalidation
+module github.com/sovereignite/harbormaster
 
 go 1.26.5
 
 require (
-	github.com/sovereignite/api v0.0.0
+	github.com/sovereignite/signal v0.0.0
 	google.golang.org/grpc v1.83.0
 )
 
@@ -15,4 +15,4 @@ require (
 	google.golang.org/protobuf v1.36.12 // indirect
 )
 
-replace github.com/sovereignite/api => ../api
+replace github.com/sovereignite/signal => ../signal
