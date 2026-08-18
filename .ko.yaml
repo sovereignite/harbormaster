@@ -1,0 +1,8 @@
+builds:
+  - id: keyvalidation
+    dir: .
+    main: ./cmd/keyvalidation
+    env:
+      - CGO_ENABLED=0
+    ldflags:
+      - -s -w
