@@ -31,7 +31,7 @@ func main() {
 	}
 
 	server := grpc.NewServer()
-	pb.RegisterKeyValidationServer(server, keyvalidation.NewService())
+	pb.RegisterKeyValidationServer(server, harbormaster.NewService())
 
 	log.Printf("KeyValidation listening on %s", listener.Addr().String())
 	go func() {
